@@ -4,14 +4,14 @@
 - 使用GET方式请求数据(不包含请求头):
 
 ```
-    // string Curl::getRaw( string $url, string $method, [ array $params] );
+    // Curl::getRaw( string $url, string $method, [ array $params] ) : string;
     $url     = 'www.mini-geek.com'; 
     $rawHtml = Curl::getRaw( $url, 'GET', [ 'name' => 'otorain' ] );
 ```
 
 - 使用GET方式请求接口(接口数据类型为json)获取数据:
 ```
-    // array Curl::get( string $url, [ array $params ] );
+    // Curl::get( string $url, [ array $params ] ) : array;
     $url        = 'www.mini-geek.com';
     $data       = Curl::get( $url, [ 'name' => 'otorian' ] );
 ```
