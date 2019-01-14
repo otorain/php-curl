@@ -9,7 +9,7 @@
     $rawHtml = Curl::getRaw( $url, 'GET', [ 'name' => 'otorain' ] );
 ```
 
-- 使用GET方式请求接口获取数据(返回数组格式):
+- 使用GET方式请求接口(接口数据类型为json)获取数据:
 ```
     // array Curl::get( string $url, [ array $params ] );
     $url        = 'www.mini-geek.com';
